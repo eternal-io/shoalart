@@ -1,0 +1,37 @@
+[package]
+name = "shoalart"
+version = "0.0.99"
+edition = "2021"
+authors = ["K--A"]
+
+description = "(WIP) Powerful ASCII Art generator, but not yet easy to use."
+
+documentation = "https://docs.rs/shoalart"
+repository = "https://github.com/eternal-io/shoalart"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+keywords = ["ascii-art", "character", "terminal"]
+categories = [
+    "algorithms",
+    "command-line-utilities",
+    "graphics",
+    "multimedia::images",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ahash = "0"
+crossterm = "0"
+edge-detection = "0"
+image = "0"
+lz4_flex = "0" # 压到就是赚到，校验才是王道。反正速度这么快，不嫖白不嫖。
+rusttype = "0"
+rustdct = "0"
+scrap = "0"
+structopt = "0"
+unicode-width = "0"
+
+[profile.dev]
+opt-level = 2
